@@ -1,6 +1,11 @@
 #include <vector>
 
-/*
+using namespace std;
+
+/*  
+    Time: O(n)
+    Space: O(1)
+    
     If we take XOR of zero and some bit, it will return that bit 'a' 
        a ⊕ 0 = a
     
