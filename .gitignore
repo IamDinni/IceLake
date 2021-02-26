@@ -1,6 +1,8 @@
 # Editor
 .vscode
+.github
 
 # Unsolved
 __*.py
 .cph
+/test
