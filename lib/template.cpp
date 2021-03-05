@@ -12,7 +12,7 @@ using ll = long long;
 using ld = long double;
 using db = double;
 
-using pi = pair<int,int>;
+using pi = pair<int, int>;
 using pl = pair<ll, ll>;
 using pd = pair<db, db>;
 
@@ -54,8 +54,8 @@ using vpd = vector<pd>;
 #define sz(x) (int)(x).size()
 #define rall(x) (x).rb(), (x).re()
 
-// Contants
-#define int MOD = 1e9 + 7;
+// Constants
+constexpr int MOD = (int) 1e9 + 7;
 
 void setIO(str s = "") { 
     freopen((str + ".in").c_str(), "r", stdin);
@@ -72,9 +72,7 @@ int main()
     fastIO();
     setIO("filename");
 
-    int T;
-    int N;
-    cin >> T;
+    int T, N; cin >> T;
     
     FOR(i, 0, T) {
         cin >> N;
