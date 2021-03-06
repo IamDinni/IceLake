@@ -52,7 +52,7 @@ using vpd = vector<pd>;
 // Constants
 constexpr int MOD = (int)1e9 + 7;
 
-void setIO(str s = "A")
+void setIO(str s = "")
 {
     freopen((s + ".in").c_str(), "r", stdin);
     freopen((s + ".out").c_str(), "w", stdout);
@@ -64,6 +64,33 @@ void fastIO()
     cin.tie(0);
 }
 
+int getGroupCount(const str s, const int sz)
+{
+
+    if (sz < 1)
+        return 0;
+
+    int groups = 0;
+    bool reset = false;
+
+    FOR(i, sz - 1)
+    {
+        if (s[i] == '1' && !reset)
+        {
+            reset = true;
+            groups++;
+        }
+
+        if (s[i] == '0')
+            reset = false;
+    }
+
+    if (s[sz - 1] != s[sz - 2] && s[sz - 1] == '1')
+        groups++;
+
+    return groups;
+}
+
 int main()
 {
     fastIO();
@@ -71,9 +98,13 @@ int main()
 
     int T;
     cin >> T;
+    str s;
 
     FOR(i, T)
     {
+        cin >> s;
+        int groups = getGroupCount(s, s.size());
+        cout << groups << '\n';
     }
 
     return 0;

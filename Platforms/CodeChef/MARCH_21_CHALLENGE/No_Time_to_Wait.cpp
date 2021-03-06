@@ -1,3 +1,5 @@
+// imdineshsingh
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -52,7 +54,7 @@ using vpd = vector<pd>;
 // Constants
 constexpr int MOD = (int)1e9 + 7;
 
-void setIO(str s = "A")
+void setIO(str s = "")
 {
     freopen((s + ".in").c_str(), "r", stdin);
     freopen((s + ".out").c_str(), "w", stdout);
@@ -69,12 +71,34 @@ int main()
     fastIO();
     // setIO("filename");
 
-    int T;
-    cin >> T;
+    int H, N, x;
+    cin >> N >> H >> x;
+    int arr[N];
 
-    FOR(i, T)
+    loop(item, arr) cin >> item;
+
+    const int reqTime = H - x;
+    bool possible = false;
+
+    if (x > H)
     {
+        cout << "YES";
+        return 0;
     }
+
+    FOR(i, N)
+    {
+        if (reqTime == arr[i])
+        {
+            possible = true;
+            break;
+        }
+    }
+
+    if (possible)
+        cout << "YES";
+    else
+        cout << "NO";
 
     return 0;
 }
