@@ -14,7 +14,8 @@ Below are some points which will help you to solve a problem. Use this in your p
 
 ### 3. Brute Force
 
-    Try to solve the problem using Brute-force as soon as possible. Don't worry if it's not efficient. State a naive algorithm and its runtime, then optimize from there. Don't code yet though!
+    Try to solve the problem using Brute-force as soon as possible. Don't worry if it's not efficient. 
+    State a naive algorithm and its runtime, then optimize from there. Don't code yet though!
 
 ### 4. Optimize
 
@@ -25,7 +26,8 @@ Below are some points which will help you to solve a problem. Use this in your p
 
 ### 5. Walk Through
 
-    Now that you've an optimial solution, walk through your approach in detail. Make sure you understand each detail before you start coding.
+    Now that you've an optimial solution, walk through your approach in detail. 
+    Make sure you understand each detail before you start coding.
 
 ### 6. Implement
 
