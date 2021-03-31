@@ -26,10 +26,10 @@ using vpd = vector<pd>;
 #define mp make_pair
 
 // Loops
-#define mFOR(i, First, Last) for (int i = (First); i < (Last); ++i)
-#define FOR(i, Last) mFOR(i, 0, Last)
-#define mROF(i, Last, First) for (int i = (Last)-1; i >= (First); --i)
-#define ROF(i, Last) mROF(i, 0, Last)
+#define rep(i, First, Last) for (int i = (First); i < (Last); ++i)
+#define FOR(i, Last) rep(i, 0, Last)
+#define brep(i, Last, First) for (int i = (Last)-1; i >= (First); --i)
+#define ROF(i, Last) brep(i, 0, Last)
 #define loop(item, items) for (auto &item : items)
 
 // Vectors
@@ -67,14 +67,11 @@ void fastIO()
 int main()
 {
     fastIO();
-    // setIO("filename");
 
     int T;
-    cin >> T;
-
-    FOR(i, T)
+    for(cin >> T; T; T--) 
     {
-    }
 
+    }
     return 0;
 }

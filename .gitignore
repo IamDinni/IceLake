@@ -5,5 +5,5 @@
 # Unsolved
 __*.py
 .cph
-/test
+test
 *.out
