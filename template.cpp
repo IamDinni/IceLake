@@ -49,6 +49,16 @@ using vpd = vector<pd>;
 #define sz(x) (int)(x).size()
 #define rall(x) (x).rb(), (x).re()
 
+// Templates
+template<class T> struct pt { T x, y, z; }; // 3d point 
+template<class T> bool ckmin(T& a, const T& b) {
+    return b < a ? a = b, 1: 0;  // Set a = min(a,b) and returns true is value of a changes 
+}
+
+
+// Debugging
+inline void dbg(auto current) {cerr <<"DEBUG: current value is " << current << '\n'; } 
+
 // Constants
 constexpr int MOD = (int)1e9 + 7;
 
@@ -60,8 +70,7 @@ void setIO(str s = "A")
 
 void fastIO()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);
+    cin.tie(0)->sync_with_stdio(0);
 }
 
 int main()
